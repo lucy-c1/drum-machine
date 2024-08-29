@@ -33,7 +33,7 @@ export default function DrumPad(props) {
 
     return (
         <div className = "drum-pad-container">
-            <button className = "drum-pad" onClick = {playAudio}>
+            <button className = "drum-pad" onClick = {playAudio} id = {props.displayText}>
                 {props.keyLetter}
                 <audio src = {props.audioSrc} id = {props.keyLetter} className = "clip">Browser does not support audio</audio>
             </button>
