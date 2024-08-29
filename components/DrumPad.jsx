@@ -10,7 +10,6 @@ into parameters later
 */
 export default function DrumPad(props) {
     function playAudio() {
-        console.log("playAudio function called");
         const audioTag = document.getElementById(props.keyLetter);
         audioTag.play();
         props.updateCurrentText(props.displayText);
